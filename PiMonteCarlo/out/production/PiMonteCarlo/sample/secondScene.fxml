@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="422.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SecondController">
+   <children>
+      <Label layoutX="244.0" layoutY="8.0" text="PI COUNT">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="83.0" prefHeight="27.0" prefWidth="274.0" text="Unesite broj poklapanja decimala:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="countButton" layoutX="463.0" layoutY="190.0" mnemonicParsing="false" onAction="#countDecimal" prefHeight="39.0" prefWidth="113.0" text="Izračunaj">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="decimalNumber" layoutX="431.0" layoutY="84.0" prefHeight="25.0" prefWidth="148.0" />
+      <TextArea fx:id="resultTextArea2" layoutX="25.0" layoutY="270.0" prefHeight="153.0" prefWidth="552.0" />
+      <Button fx:id="backButton" layoutX="24.0" layoutY="190.0" mnemonicParsing="false" onAction="#backOnMainScene" prefHeight="39.0" prefWidth="113.0" text="Nazad">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="24.0" layoutY="250.0" text="Rezultati analize:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
